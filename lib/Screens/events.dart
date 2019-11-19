@@ -7,12 +7,16 @@ class Events extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
+    return Container(
+      child:
         Image(
         image: AssetImage("assets/image.jpg"),
         ),
-        /*Container(
+    );
+  }
+}
+
+/*Container(
         child: ListView(
           padding: EdgeInsets.all(2.0),
           children: <Widget>[
@@ -33,7 +37,3 @@ class Events extends StatelessWidget {
           ],
          ),
         ),*/
-      ],
-    );
-  }
-}

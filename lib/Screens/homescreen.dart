@@ -1,3 +1,4 @@
+import 'package:fachbereich_ai_events/Screens/list.dart';
 import 'package:flutter/material.dart';
 import 'package:fachbereich_ai_events/Screens/events.dart';
 
@@ -31,7 +32,15 @@ class _newHomesScreenState extends State<newHomesScreen> {
       ),
 
       body: Center(
-        child: pages[_selectedIndex],
+        child: RaisedButton (
+          child: Text("Zur Liste"),
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute
+              (builder: (context) => EventListe(),
+              )
+            );
+          },
+        ) ,
       ),
 
       bottomNavigationBar: BottomNavigationBar(
